@@ -1,0 +1,19 @@
+{
+  "name": "demo_web_app",
+  "version": "1.0.0",
+  "description": "implementing the dental app",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server"
+  },
+  "author": "sidozoldik",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
