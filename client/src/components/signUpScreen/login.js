@@ -1,19 +1,21 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import '../../styles/login/login.css';
 
 
 function Login() {
 
     return (
         <div className="login-page">
-            <Fragment className="image-div">
-                <h1>Image div fargment</h1>
-            </Fragment>
-            <Fragment className="text-div">
+            <div className="image-div">
+                <span className="logo"></span>
+                <p>login</p>
+            </div>
+            <div className="text-div">
                 <h1>Text div fragment</h1>
-            </Fragment>
-            <Fragment className="login-form-div">
+            </div>
+            <div className="login-form-div">
                 <h1>Login form div</h1>
-            </Fragment>
+            </div>
         </div>
     );
 };

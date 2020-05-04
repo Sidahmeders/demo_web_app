@@ -1,0 +1,14 @@
+.login-page .image-div {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-page .image-div .logo {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  background: url(../../images/login.svg);
+  background-size: contain;
+}
+/*# sourceMappingURL=login.css.map */
