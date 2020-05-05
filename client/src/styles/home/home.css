@@ -1,0 +1,50 @@
+.home-page {
+  height: 100vh;
+}
+
+.home-page .background-image {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+  background-image: url(../../images/amine_ds.jpg);
+  opacity: .1;
+}
+
+.home-page header {
+  height: 30vh;
+}
+
+.home-page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-page main a {
+  background-color: #ffd207;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  border: 1px solid white;
+  margin: 20px 0;
+  padding: 4px 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #819697;
+          box-shadow: 0 0 3px #819697;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.home-page main a:hover {
+  background-color: #ffe114;
+}
+/*# sourceMappingURL=home.css.map */

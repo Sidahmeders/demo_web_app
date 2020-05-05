@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { ContextConsumer } from './context';
 
 import Login from './components/signUpScreen/login';
+import Regiter from './components/signUpScreen/register';
+import Home from './components/homeScreen/home';
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Login} />
+        <Route exact path="/" component={Login} />
+        <Route path="/register" component={Regiter} />
+        <Route path="/home" component={Home} />
       </Switch>
     </Router>
   );

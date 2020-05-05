@@ -1,14 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+.login-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .background-image {
+  margin-top: 15vh;
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  z-index: -1;
+  opacity: .05;
+  background-image: url(../../images/amine_ds.jpg);
+}
+
 .login-page .image-div {
-  height: 400px;
+  margin-top: 20px;
   width: 100%;
   text-align: center;
 }
 
 .login-page .image-div .logo {
   display: inline-block;
-  width: 300px;
-  height: 200px;
+  width: 320px;
+  height: 220px;
   background: url(../../images/login.svg);
   background-size: contain;
+}
+
+.login-page .image-div p {
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: #0e6e7a;
+  -webkit-transform: translate(-80px, -50px);
+          transform: translate(-80px, -50px);
+}
+
+.login-page .login-forms-div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.login-page .login-forms-div form {
+  width: 100%;
+  background: white;
+  border: 1px solid #999;
+  padding: 40px 20px 30px 20px;
+  border-radius: 10px;
+}
+
+.login-page .login-forms-div form div {
+  width: 96%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .login-forms-div form div label {
+  color: #0e6e7a;
+  font-size: 25px;
+  padding: 0 25px 0 20px;
+  float: left;
+}
+
+.login-page .login-forms-div form div input {
+  outline: none;
+  border: 1px solid #999;
+  font-size: 24px;
+  padding: 5px 10px;
+  float: right;
+  width: 68%;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.login-page .login-forms-div form div ::-webkit-input-placeholder {
+  color: rgba(104, 133, 133, 0.3);
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.login-page .login-forms-div form div :-ms-input-placeholder {
+  color: rgba(104, 133, 133, 0.3);
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.login-page .login-forms-div form div ::-ms-input-placeholder {
+  color: rgba(104, 133, 133, 0.3);
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.login-page .login-forms-div form div ::placeholder {
+  color: rgba(104, 133, 133, 0.3);
+  font-weight: 100;
+  letter-spacing: 4px;
+}
+
+.login-page .login-forms-div form button {
+  display: inline-block;
+  width: 140px;
+  height: 36px;
+  margin-top: 20px;
+  padding-bottom: 2px;
+  border: 0;
+  border-radius: 3px;
+  background: #64b4c8;
+  color: white;
+  font-size: 20px;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+.login-page .login-forms-div form button:hover {
+  cursor: pointer;
+  background: #5ac8dc;
+}
+
+.login-page .login-forms-div .register-link-btn {
+  margin-top: 20px;
+}
+
+.login-page .login-forms-div .register-link-btn p {
+  padding-bottom: 10px;
+}
+
+.login-page .login-forms-div .register-link-btn a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 1px 30px;
+  color: #0e6e7a;
+  border: 2px solid #64b4c8;
+  border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+  .login-page .login-forms-div {
+    width: 95%;
+  }
+  .login-page .login-forms-div form {
+    padding: 10px 0;
+  }
+  .login-page .login-forms-div form div {
+    margin: 10px 0;
+  }
+  .login-page .login-forms-div form div label {
+    float: none !important;
+    font-size: 22px;
+  }
+  .login-page .login-forms-div form div input {
+    font-size: 16px;
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=login.css.map */

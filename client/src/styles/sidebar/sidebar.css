@@ -1,0 +1,36 @@
+.home-page .sidebar {
+  display: none;
+  width: 70%;
+  height: 100vh;
+  position: fixed;
+  background-color: #bebebe;
+}
+
+.home-page .sidebar .profile {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.home-page .sidebar .profile img {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.home-page .sidebar .profile div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.home-page .sidebar .profile div p span {
+  color: #444444;
+}
+/*# sourceMappingURL=sidebar.css.map */
