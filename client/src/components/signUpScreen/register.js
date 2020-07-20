@@ -28,6 +28,7 @@ function Register() {
                     {renderFormInput("label_1", "text", "mm/dd/yy")}
                     {renderFormInput("label_2", "text", "mm/dd/yy")}
                     {renderFormInput("label_3", "text", "mm/dd/yy")}
+                    <button>register</button>
                 </form>
                 <div className="login-link-btn">
                     <p>have account</p>
