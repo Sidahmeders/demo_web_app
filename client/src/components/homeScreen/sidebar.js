@@ -11,7 +11,7 @@ function SideBar() {
                 <p>sidozoldik793@gmail.com</p>
                 <p>sidahmed boutaraa</p>
                 <div>
-                    <p>status: <span>assistant</span></p>
+                    <p>status: <span>student</span></p>
                     <p>college year: <span>3em</span></p>
                 </div>
             </div>

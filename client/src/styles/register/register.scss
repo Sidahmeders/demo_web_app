@@ -1,0 +1,139 @@
+@import '../vars.scss';
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .background-image {
+        margin-top: 8vh;
+        width: 100%;
+        height: 80vh;
+        position: fixed;
+        z-index: -1;
+        opacity: .05;
+        background-image: url(../../images/amine_ds.jpg);
+    }
+    .image-div {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+
+        .logo {
+            display: inline-block;
+            width: 320px;
+            height: 200px;
+            background: url(../../images/auth.svg);
+            background-size: contain;
+        }
+        p {
+            font-size: 35px;
+            letter-spacing: 3px;
+            color: $second-col;
+            margin-left: 185px;
+            transform: translate(0, -45px);
+        }
+    }
+    .register-forms-div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+        form {
+            width: 100%;
+            background: rgb(255, 255, 255);
+            border: 1px solid $prime-col;
+            padding: 40px 20px 30px 20px;
+            border-radius: 10px;
+
+            div {
+                width: 96%;
+                height: 10vh;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                label {
+                    color: $second-col;
+                    font-size: 25px;
+                    padding: 0 25px 0 20px;
+                    float: left;
+                }
+                input {
+                    outline: none;
+                    border: 1px solid $prime-col;
+                    font-size: 24px;
+                    padding: 5px 10px;
+                    float: right;
+                    width: 68%;
+                    letter-spacing: 2px;
+                    border-radius: 5px;
+                }
+                ::placeholder {
+                    color: rgba(104, 133, 133, .3);
+                    font-weight: 100;
+                    letter-spacing: 4px;
+                }
+            }
+            button {
+                display: inline-block;
+                width: 140px;
+                height: 36px;
+                margin-top: 20px;
+                border: 0;
+                border-radius: 3px;
+                background: $btn-col;
+                color: white;
+                font-size: 20px;
+                transition: .8s ease;
+                
+                &:hover {
+                    cursor: pointer;
+                    background: $btn-hover;
+                }
+            }
+        }
+        .login-link-btn {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            p {
+                padding-bottom: 10px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                padding: 1px 45px;
+                color: $second-col;
+                border: 2px solid $btn-col;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .register-page {
+        .register-forms-div {
+            width: 95%;
+            form {
+                padding: 10px 0;
+                div {
+                    margin: 10px 0;
+                    label {
+                        float: none !important;
+                        font-size: 22px;
+                    }
+                    input {
+                        font-size: 16px;
+                        width: 80%;
+                    }
+                }
+            } 
+        }
+    }
+}
+

@@ -14,14 +14,14 @@ function Home() {
             </header>
             <main>
                 <div>
-                    <Link to="/newclient">
+                    <Link to="/newpatient">
                         new patient
                     </Link>
                     <p></p>
-                    <Link to="oldclient">
+                    <Link to="oldpatient">
                         old patient
                     </Link>
-                    <Link to="/comingclient">
+                    <Link to="/comingpatient">
                         coming patient
                     </Link>
                 </div>
